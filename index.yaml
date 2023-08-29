@@ -1,0 +1,124 @@
+apiVersion: v1
+entries:
+  osdfir-infrastructure:
+  - annotations:
+      category: Security
+      licenses: Apache-2.0
+    apiVersion: v2
+    created: "2023-08-29T16:16:44.887555377Z"
+    dependencies:
+    - condition: timesketch.enabled
+      name: timesketch
+      repository: oci://us-docker.pkg.dev/osdfir-registry/osdfir-charts
+      version: 0.2.0
+    - condition: turbinia.enabled
+      name: turbinia
+      repository: oci://us-docker.pkg.dev/osdfir-registry/osdfir-charts
+      version: 0.2.0
+    description: A Helm chart for Open Source Digital Forensics Kubernetes deployments.
+    digest: 1737befd68dac6b420591d465282a7597ad8e04daf1a00f33ac0001c5d3b733e
+    home: https://github.com/google/osdfir-infrastructure
+    keywords:
+    - timesketch
+    - turbinia
+    - dfir
+    - analysis
+    - processing
+    - cloud
+    maintainers:
+    - name: Wajih Yassine
+      url: https://github.com/wajihyassine
+    - name: Johan Berggren
+      url: https://github.com/berggren
+    - name: Aaron Peterson
+      url: https://github.com/aarontp
+    - name: hacktobeer
+      url: https://github.com/hacktobeer
+    name: osdfir-infrastructure
+    sources:
+    - https://github.com/google/osdfir-infrastructure
+    - https://github.com/google/turbinia
+    - https://github.com/google/timesketch
+    urls:
+    - https://hur.github.io/charts/osdfir-infrastructure-0.2.0.tgz
+    version: 0.2.0
+  timesketch:
+  - annotations:
+      category: Security
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: "20210224"
+    created: "2023-08-29T16:16:44.905557629Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.2.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.3
+    - condition: opensearch.enabled
+      name: opensearch
+      repository: https://opensearch-project.github.io/helm-charts/
+      version: 2.11.3
+    description: A Helm chart for Timesketch Kubernetes deployments.
+    digest: f6e936a0e681d2798618c6ce7191e89c3954b25b6764810ad2058f689e48e7fb
+    home: https://github.com/google/timesketch
+    icon: https://raw.githubusercontent.com/google/timesketch/master/timesketch/frontend-ng/dist/timesketch-color.png
+    keywords:
+    - timesketch
+    - dfir
+    - analysis
+    maintainers:
+    - name: Wajih Yassine
+      url: https://github.com/wajihyassine
+    - name: Johan Berggren
+      url: https://github.com/berggren
+    name: timesketch
+    sources:
+    - https://github.com/google/timesketch
+    - https://timesketch.org/
+    urls:
+    - https://hur.github.io/charts/timesketch-0.2.0.tgz
+    version: 0.2.0
+  turbinia:
+  - annotations:
+      category: Security
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: "20230315"
+    created: "2023-08-29T16:16:44.930138939Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.3
+    - alias: oauth2proxy
+      condition: oauth2proxy.enabled
+      name: oauth2-proxy
+      repository: https://charts.bitnami.com/bitnami
+      version: 3.6.1
+    description: A Helm chart for Turbinia Kubernetes deployments.
+    digest: b593bdea4f5bac1bd0bb0015aee2d77ca87df0aac6a7f61142ea2ac54c5aa69e
+    home: https://github.com/google/turbinia
+    icon: https://raw.githubusercontent.com/google/turbinia/master/web/src/assets/turbinia-logo-mark.png
+    keywords:
+    - turbinia
+    - dfir
+    - processing
+    - scaling
+    maintainers:
+    - name: Wajih Yassine
+      url: https://github.com/wajihyassine
+    - name: Aaron Peterson
+      url: https://github.com/aarontp
+    - name: hacktobeer
+      url: https://github.com/hacktobeer
+    name: turbinia
+    sources:
+    - https://github.com/google/turbinia
+    urls:
+    - https://hur.github.io/charts/turbinia-0.2.0.tgz
+    version: 0.2.0
+generated: "2023-08-29T16:16:44.843306099Z"
