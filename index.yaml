@@ -5,18 +5,18 @@ entries:
       category: Security
       licenses: Apache-2.0
     apiVersion: v2
-    created: "2023-08-29T16:16:44.887555377Z"
+    created: "2023-08-29T16:28:02.455408979Z"
     dependencies:
     - condition: timesketch.enabled
       name: timesketch
-      repository: oci://us-docker.pkg.dev/osdfir-registry/osdfir-charts
+      repository: https://hur.github.io/charts
       version: 0.2.0
     - condition: turbinia.enabled
       name: turbinia
-      repository: oci://us-docker.pkg.dev/osdfir-registry/osdfir-charts
+      repository: https://hur.github.io/charts
       version: 0.2.0
     description: A Helm chart for Open Source Digital Forensics Kubernetes deployments.
-    digest: 1737befd68dac6b420591d465282a7597ad8e04daf1a00f33ac0001c5d3b733e
+    digest: 478120ddf34234198ddd06d533ed4c6cbb82c619d6906e293724934e3eee94ef
     home: https://github.com/google/osdfir-infrastructure
     keywords:
     - timesketch
@@ -48,7 +48,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: "20210224"
-    created: "2023-08-29T16:16:44.905557629Z"
+    created: "2023-08-29T16:28:02.47490138Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -63,7 +63,7 @@ entries:
       repository: https://opensearch-project.github.io/helm-charts/
       version: 2.11.3
     description: A Helm chart for Timesketch Kubernetes deployments.
-    digest: f6e936a0e681d2798618c6ce7191e89c3954b25b6764810ad2058f689e48e7fb
+    digest: 826d542d8003b73bed8d3fd372f1efb01e5d939172124b217ce5afbfa89ed0f6
     home: https://github.com/google/timesketch
     icon: https://raw.githubusercontent.com/google/timesketch/master/timesketch/frontend-ng/dist/timesketch-color.png
     keywords:
@@ -88,7 +88,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: "20230315"
-    created: "2023-08-29T16:16:44.930138939Z"
+    created: "2023-08-29T16:28:02.496019864Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -100,7 +100,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 3.6.1
     description: A Helm chart for Turbinia Kubernetes deployments.
-    digest: b593bdea4f5bac1bd0bb0015aee2d77ca87df0aac6a7f61142ea2ac54c5aa69e
+    digest: 82263e4b3c720111b15f708d44da76c28c72d049bd6c576bf26a55499854bbf6
     home: https://github.com/google/turbinia
     icon: https://raw.githubusercontent.com/google/turbinia/master/web/src/assets/turbinia-logo-mark.png
     keywords:
@@ -121,4 +121,4 @@ entries:
     urls:
     - https://hur.github.io/charts/turbinia-0.2.0.tgz
     version: 0.2.0
-generated: "2023-08-29T16:16:44.843306099Z"
+generated: "2023-08-29T16:28:02.4141431Z"
